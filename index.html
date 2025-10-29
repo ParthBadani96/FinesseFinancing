@@ -552,11 +552,18 @@
                 </div>
 
 <!-- HubSpot Form -->
+<!-- HubSpot Form -->
 <div id="hubspotFormContainer"></div>
 
-<script src="https://js-na2.hsforms.net/forms/embed/243907939.js" defer></script>
-<div class="hs-form-frame" data-region="na2" data-form-id="8c0ff24c-380c-4e83-b3ef-df0a96118b34" data-portal-id="243907939"></div>
-
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na2",
+    portalId: "243907939",
+    formId: "8c0ff24c-380c-4e83-b3ef-df0a96118b34",
+    target: '#hubspotFormContainer'
+  });
+</script>
 <div class="success-message" id="successMessage">
     <h3>✅ Thank you for your interest!</h3>
     <p>We've received your information and will be in touch within 4 hours during business hours.</p>
@@ -585,23 +592,23 @@
     </div>
 
     <script>
-        // Create floating particles
-        function createParticles() {
-            const container = document.getElementById('particles');
-            for (let i = 0; i < 15; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                const size = Math.random() * 4 + 2;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 20 + 's';
-                particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
-                container.appendChild(particle);
-            }
+    // Create floating particles
+    function createParticles() {
+        const container = document.getElementById('particles');
+        for (let i = 0; i < 15; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            const size = Math.random() * 4 + 2;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 20 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+            container.appendChild(particle);
         }
-        createParticles();
-    </script>
+    }
+    createParticles();
+</script>
 </body>
 </html>
