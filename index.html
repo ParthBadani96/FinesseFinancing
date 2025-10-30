@@ -554,20 +554,20 @@
 <!-- HubSpot Form -->
 <!-- HubSpot Form -->
 <!-- HubSpot Form -->
-<div id="hubspotFormContainer">
-    <script src="https://js-na2.hsforms.net/forms/embed/243907939.js" defer></script>
-    <div class="hs-form-frame" 
-         data-region="na2" 
-         data-form-id="8c0ff24c-380c-4e83-b3ef-df0a96118b34" 
-         data-portal-id="243907939">
-    </div>
-</div>
+<!-- HubSpot Form - Alternative Method -->
+<div id="hubspotFormContainer"></div>
 
-<div class="success-message" id="successMessage">
-    <h3>✅ Thank you for your interest!</h3>
-    <p>We've received your information and will be in touch within 4 hours during business hours.</p>
-</div>
-            </div>
+<script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na2",
+    portalId: "243907939",
+    formId: "8c0ff24c-380c-4e83-b3ef-df0a96118b34",
+    target: '#hubspotFormContainer',
+    cssRequired: false,
+    inlineMessage: "Thank you! We'll be in touch within 4 hours during business hours."
+  });
+</script>
         </section>
 
         <!-- Features -->
